@@ -21,13 +21,32 @@ This repository contains the GitHub Pages version of the Gore Financial Services
 
 ## Local Preview
 
-If Jekyll is installed locally, you can preview the site with:
+The recommended review workflow is to run the site inside WSL using the project Conda environment.
 
-```powershell
-jekyll serve
+### Environment Setup
+
+```bash
+conda env create -f environment.yml
+conda activate gore-financial-pages-review
+gem install bundler
+bundle install
 ```
 
-If Jekyll is not installed, install Ruby, Jekyll, and Bundler first, then run the same command from the repository root.
+### Start The Site
+
+```bash
+bundle exec jekyll serve --livereload --host 127.0.0.1 --port 4000
+```
+
+Open `http://127.0.0.1:4000` in your browser for review.
+
+### Build Validation
+
+```bash
+bundle exec jekyll build
+```
+
+If you are running from a PowerShell terminal instead of WSL, use WSL to execute the Ruby tooling because the repository lives on a WSL filesystem path.
 
 ## Validation
 
@@ -43,6 +62,15 @@ The script checks for:
 - prototype-hosted Google image URLs in the production site
 - a missing form endpoint warning in `_data/site_settings.yml`
 
+## Form Setup
+
+The contact form is already wired to read its provider configuration from `_data/site_settings.yml`.
+
+- `form_provider` identifies the planned provider
+- `form_endpoint` is the public endpoint used by the static form
+
+See `docs/local-review-and-form-setup.md` for the provider comparison, setup steps, and security guidance.
+
 ## Deployment
 
 Deployment is handled by GitHub Actions in `.github/workflows/pages.yml`.
@@ -57,3 +85,5 @@ Before the site is considered launch-ready, set these values in `_data/site_sett
 ## Notes
 
 The original Google Stitch prototype folders are intentionally preserved as source references but excluded from Jekyll build output.
+
+Local review and secure form implementation notes live in `docs/local-review-and-form-setup.md`.

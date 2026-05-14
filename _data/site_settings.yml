@@ -10,6 +10,7 @@ contact_email: ""
 contact_phone: ""
 service_region: Australia-wide advisory for founders, investors, and private clients.
 response_sla: We aim to respond to new enquiries within two business days.
+# Public form settings only. Keep provider secrets and verification keys outside this repository.
 form_provider: Formspree
 form_endpoint: ""
 form_success_message: Thank you for your enquiry. We will review the details and get back to you shortly.

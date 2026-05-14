@@ -25,3 +25,13 @@
 5. Run `scripts/validate-static-site.ps1` and confirm it reports no placeholder links or prototype-hosted assets in production files.
 6. In GitHub Actions, verify the Pages workflow runs validation before build and deploy.
 
+## Local Review Workflow
+
+1. Create and activate the Conda environment from `environment.yml` inside WSL.
+2. Run `gem install bundler` followed by `bundle install` from the repo root.
+3. Start the site with `bundle exec jekyll serve --livereload --host 127.0.0.1 --port 4000`.
+4. Verify the site loads locally and page navigation works without layout regressions.
+5. Run `bundle exec jekyll build` before ending the review pass.
+6. If a form endpoint has been configured, submit a test enquiry and confirm the provider receives it.
+
+

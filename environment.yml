@@ -1,0 +1,6 @@
+name: gore-financial-pages-review
+channels:
+  - conda-forge
+dependencies:
+  - ruby=3.2
+  - git
