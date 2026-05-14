@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F3F0EE"/>
+  <rect x="48" y="48" width="1104" height="534" rx="44" fill="#FCFBFA" stroke="#D1CDC7"/>
+  <circle cx="254" cy="258" r="128" fill="#141413"/>
+  <circle cx="350" cy="296" r="118" fill="#F37338" fill-opacity="0.9"/>
+  <path d="M138 450C280 348 442 314 620 322C786 330 918 396 1060 506" stroke="#F37338" stroke-dasharray="16 16" stroke-width="8"/>
+  <text x="612" y="232" fill="#141413" font-family="Sofia Sans, Arial, sans-serif" font-size="62" font-weight="700">Gore Financial</text>
+  <text x="612" y="300" fill="#141413" font-family="Sofia Sans, Arial, sans-serif" font-size="62" font-weight="700">Services</text>
+  <text x="612" y="372" fill="#696969" font-family="Sofia Sans, Arial, sans-serif" font-size="30" font-weight="450">Strategic accounting for growth, capital gains, and clarity.</text>
+</svg>

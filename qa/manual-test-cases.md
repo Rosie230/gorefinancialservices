@@ -15,3 +15,13 @@
 3. Verify the values section renders all entries from `_data/values.yml` on desktop and mobile layouts.
 4. Confirm no root-level site pages or shared includes reference prototype-hosted Google image URLs.
 5. Confirm the contact page uses the shared contact form include and links to the privacy page.
+
+## Phase 6 Through 10
+
+1. Confirm the contact form renders the configured provider path when `_data/site_settings.yml` includes a real `form_endpoint`.
+2. Verify the privacy and terms pages contain structured legal sections and are linked from the footer.
+3. Confirm the page source includes a canonical URL, Open Graph metadata, and favicon reference.
+4. Request `/robots.txt` and `/sitemap.xml` from the built site and verify they render correctly.
+5. Run `scripts/validate-static-site.ps1` and confirm it reports no placeholder links or prototype-hosted assets in production files.
+6. In GitHub Actions, verify the Pages workflow runs validation before build and deploy.
+
