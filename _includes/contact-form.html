@@ -1,0 +1,65 @@
+{% assign form_endpoint = site.data.site_settings.form_endpoint | strip %}
+<section class="px-6 py-16 md:px-12 md:py-24">
+  <div class="mx-auto grid max-w-[1280px] gap-10 md:grid-cols-12 md:items-start">
+    <div class="space-y-6 md:col-span-5">
+      <div class="overflow-hidden rounded-full border border-dust-taupe/70 bg-white shadow-[0px_24px_48px_rgba(0,0,0,0.08)]">
+        <img alt="Abstract editorial illustration representing consultation and structured planning." class="w-full" src="{{ '/assets/images/contact-consultation.svg' | relative_url }}">
+      </div>
+      <div class="rounded-[2rem] bg-white p-6 shadow-[0px_24px_48px_rgba(0,0,0,0.08)]">
+        <p class="text-eyebrow uppercase tracking-[0.2em] text-clay-brown">What to expect</p>
+        <p class="mt-4 text-body-standard text-slate-gray">{{ site.data.site_settings.response_sla }}</p>
+        <p class="mt-3 text-body-standard text-slate-gray">{{ site.data.site_settings.service_region }}</p>
+      </div>
+    </div>
+    <div class="md:col-span-7">
+      <div class="rounded-[2.5rem] bg-surface-container-lowest p-8 shadow-[0px_24px_48px_rgba(0,0,0,0.08)] md:p-12">
+        <div class="mb-8 flex items-center gap-3">
+          <div class="h-2 w-2 rounded-full bg-light-signal-orange"></div>
+          <p class="text-eyebrow uppercase tracking-[0.2em] text-ink-black">Client enquiry</p>
+        </div>
+        <form {% if form_endpoint != '' %}action="{{ form_endpoint }}"{% else %}action="{{ '/contact/' | relative_url }}"{% endif %} class="space-y-6" method="POST">
+          <div>
+            <label class="sr-only" for="fullName">Full name</label>
+            <input class="w-full rounded-full border border-surface-dim bg-canvas-cream px-6 py-4 text-body-standard text-ink-black placeholder:text-on-surface-variant focus:border-ink-black focus:outline-none focus:ring-0" id="fullName" name="fullName" placeholder="Full name *" required type="text">
+          </div>
+          <div>
+            <label class="sr-only" for="email">Email address</label>
+            <input class="w-full rounded-full border border-surface-dim bg-canvas-cream px-6 py-4 text-body-standard text-ink-black placeholder:text-on-surface-variant focus:border-ink-black focus:outline-none focus:ring-0" id="email" name="email" placeholder="Email address *" required type="email">
+          </div>
+          <div>
+            <label class="sr-only" for="businessName">Business name</label>
+            <input class="w-full rounded-full border border-surface-dim bg-canvas-cream px-6 py-4 text-body-standard text-ink-black placeholder:text-on-surface-variant focus:border-ink-black focus:outline-none focus:ring-0" id="businessName" name="businessName" placeholder="Business name (optional)" type="text">
+          </div>
+          <div class="relative">
+            <label class="sr-only" for="serviceInterest">Service interest</label>
+            <select class="w-full appearance-none rounded-full border border-surface-dim bg-canvas-cream px-6 py-4 text-body-standard text-ink-black focus:border-ink-black focus:outline-none focus:ring-0" id="serviceInterest" name="serviceInterest" required>
+              <option disabled selected value="">Select service interest *</option>
+              {% for service in site.data.services %}
+                <option value="{{ service.title | slugify }}">{{ service.title }}</option>
+              {% endfor %}
+            </select>
+            <div class="pointer-events-none absolute inset-y-0 right-6 flex items-center text-on-surface-variant">
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </div>
+          </div>
+          <div>
+            <label class="sr-only" for="message">How can we help?</label>
+            <textarea class="w-full resize-none rounded-[1.5rem] border border-surface-dim bg-canvas-cream px-6 py-5 text-body-standard text-ink-black placeholder:text-on-surface-variant focus:border-ink-black focus:outline-none focus:ring-0" id="message" name="message" placeholder="How can we help you? *" required rows="5"></textarea>
+          </div>
+          {% if form_endpoint == '' %}
+            <div class="rounded-[1.5rem] border border-dust-taupe/70 bg-surface-container-low p-4 text-body-standard text-slate-gray">
+              Form delivery is ready for GitHub Pages, but the final {{ site.data.site_settings.form_provider }} endpoint still needs to be added to `_data/site_settings.yml` before launch.
+            </div>
+          {% endif %}
+          <button class="flex w-full items-center justify-center gap-2 rounded-full bg-ink-black px-8 py-5 text-nav-button text-canvas-cream transition-opacity hover:opacity-85" type="submit">
+            <span>Submit request</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </button>
+          <p class="text-center text-footer-link text-slate-gray">
+            By submitting, you agree to our <a class="text-link-blue underline-offset-4 hover:underline" href="{{ '/legal/privacy/' | relative_url }}">Privacy Policy</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

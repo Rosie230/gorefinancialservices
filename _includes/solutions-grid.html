@@ -1,0 +1,40 @@
+<section class="px-6 py-16 md:px-12 md:py-24">
+  <div class="mx-auto max-w-[1400px] rounded-[3rem] bg-lifted-cream px-8 py-12 md:px-12 md:py-16">
+    <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+      <div class="max-w-[620px] space-y-4">
+        <p class="flex items-center gap-2 text-eyebrow uppercase tracking-[0.2em] text-clay-brown">
+          <span class="h-2 w-2 rounded-full bg-light-signal-orange"></span>
+          {{ include.eyebrow }}
+        </p>
+        <h2 class="text-h2-section text-ink-black">{{ include.heading }}</h2>
+        <p class="text-body-standard text-slate-gray">{{ include.copy }}</p>
+      </div>
+      {% if include.cta_text and include.cta_url %}
+        <a class="inline-flex items-center gap-2 text-nav-button text-ink-black transition-colors hover:text-clay-brown" href="{{ include.cta_url | relative_url }}">
+          {{ include.cta_text }}
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      {% endif %}
+    </div>
+    <div class="mt-12 grid gap-10 md:grid-cols-3 md:gap-12">
+      {% for service in site.data.services %}
+        <article class="flex flex-col items-center text-center {% if forloop.index0 == 0 %}md:translate-y-10{% endif %}">
+          <div class="relative h-[280px] w-[280px] overflow-hidden rounded-full border border-dust-taupe/70 bg-white shadow-[0px_24px_48px_rgba(0,0,0,0.08)] md:h-[320px] md:w-[320px]">
+            <img alt="{{ service.title }} illustration" class="h-full w-full object-cover" src="{{ service.image | relative_url }}">
+            <div class="absolute bottom-5 right-5 flex h-14 w-14 items-center justify-center rounded-full bg-surface-container-lowest shadow-[0px_12px_24px_rgba(0,0,0,0.08)]">
+              <span class="material-symbols-outlined text-ink-black">{{ service.icon }}</span>
+            </div>
+          </div>
+          <div class="mt-8 max-w-[34ch] space-y-3">
+            <h3 class="text-h3-card text-ink-black">{{ service.title }}</h3>
+            <p class="text-body-standard text-slate-gray">{{ service.summary }}</p>
+            {% if include.show_detail == 'true' %}
+              <p class="text-body-standard text-slate-gray/90">{{ service.detail }}</p>
+              <p class="text-eyebrow uppercase tracking-[0.2em] text-clay-brown">{{ service.audience }}</p>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

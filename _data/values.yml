@@ -1,0 +1,15 @@
+- title: Integrity
+  description: Clear, grounded advice that respects both compliance obligations and the weight of client decisions.
+  image: /assets/images/value-integrity.svg
+  container_class: top-[70px] left-[110px]
+  image_class: h-[220px] w-[220px]
+- title: Foresight
+  description: Planning that looks ahead to capital events, reporting cycles, and structural consequences before they become urgent.
+  image: /assets/images/value-foresight.svg
+  container_class: top-[160px] right-[110px]
+  image_class: h-[260px] w-[260px]
+- title: Partnership
+  description: Advice delivered as an ongoing relationship, not a once-a-year transaction.
+  image: /assets/images/value-partnership.svg
+  container_class: top-[430px] left-[240px]
+  image_class: h-[200px] w-[200px]

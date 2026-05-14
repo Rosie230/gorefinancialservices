@@ -3,42 +3,20 @@ layout: home
 title: Strategic Accounting For Growth And Complexity
 description: Gore Financial Services combines structured tax advice, founder-ready planning, and capital gains expertise in one calm, modern client experience.
 ---
-<section class="px-6 md:px-12">
-  <div class="mx-auto grid max-w-[1280px] items-center gap-12 md:grid-cols-12 md:gap-20">
-    <div class="space-y-6 md:col-span-5">
-      <p class="flex items-center gap-2 text-eyebrow uppercase tracking-[0.2em] text-clay-brown">
-        <span class="h-2 w-2 rounded-full bg-light-signal-orange"></span>
-        Elevated strategy
-      </p>
-      <h1 class="max-w-[12ch] text-h1-hero-mobile md:text-h1-hero text-ink-black">
-        Strategic accounting for every stage of growth.
-      </h1>
-      <p class="max-w-[54ch] text-body-standard text-slate-gray">
-        We translate financial complexity into structured decisions for founders, investors, and private clients who need calm, high-context advice.
-      </p>
-      <div class="flex flex-wrap gap-4">
-        <a class="rounded-full bg-ink-black px-7 py-4 text-nav-button text-canvas-cream transition-opacity hover:opacity-85" href="{{ '/contact/' | relative_url }}">Schedule a consultation</a>
-        <a class="rounded-full border border-ink-black px-7 py-4 text-nav-button text-ink-black transition-colors hover:bg-surface-container-high" href="{{ '/services/' | relative_url }}">View services</a>
-      </div>
-    </div>
-    <div class="relative md:col-span-7">
-      <div class="absolute inset-0 translate-x-4 translate-y-4 rounded-[2.5rem] bg-lifted-cream shadow-[0px_24px_48px_rgba(0,0,0,0.08)]"></div>
-      <div class="relative overflow-hidden rounded-[2.5rem] border border-dust-taupe/70 bg-surface-container-highest p-8 md:p-12">
-        <p class="text-eyebrow uppercase tracking-[0.2em] text-slate-gray">Gore Financial Services</p>
-        <p class="mt-6 max-w-[28ch] text-h2-section text-ink-black">
-          Strategic planning, entity design, and capital gains advice built for momentum and control.
-        </p>
-        <div class="mt-10 grid gap-4 md:grid-cols-2">
-          <div class="rounded-[2rem] bg-white p-5">
-            <p class="text-h3-card text-ink-black">Founders</p>
-            <p class="mt-3 text-body-standard text-slate-gray">Entity setup, advisory retainers, and tax-aware growth decisions.</p>
-          </div>
-          <div class="rounded-[2rem] bg-white p-5">
-            <p class="text-h3-card text-ink-black">Investors</p>
-            <p class="mt-3 text-body-standard text-slate-gray">Capital gains planning, record discipline, and decision-ready analysis.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include home-hero.html %}
+{% include solutions-grid.html
+  eyebrow="Our capabilities"
+  heading="Architecting robust financial structures for sustained growth."
+  copy="The homepage now reuses the strongest section pattern from the prototype set: bold circular visuals, editorial spacing, and a focused list of services that can expand without duplicating markup."
+  cta_text="View all services"
+  cta_url="/services/"
+  show_detail="false"
+%}
+{% include expertise-section.html %}
+{% include cta-section.html
+  icon="forum"
+  heading="Ready to align your assets with your ambitions?"
+  copy="Start with a structured conversation about the decision, transaction, or growth stage you are working through now."
+  button_text="Schedule a consultation"
+  url="/contact/"
+%}

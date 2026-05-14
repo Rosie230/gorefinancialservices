@@ -1,0 +1,23 @@
+<section class="px-6 py-16 md:px-12 md:py-24">
+  <div class="mx-auto grid max-w-[1280px] gap-12 border-t border-dust-taupe/50 pt-16 md:grid-cols-12 md:gap-8">
+    <div class="space-y-6 md:col-span-5 md:sticky md:top-[140px] md:self-start">
+      <h2 class="text-h2-section text-ink-black">Strategic architecture for modern wealth.</h2>
+      <p class="text-body-standard text-slate-gray">Our expertise is not limited to compliance. We help clients build the right structures, understand trade-offs early, and make better decisions before the stakes escalate.</p>
+      <a class="inline-flex items-center gap-2 rounded-full border border-ink-black px-6 py-3 text-nav-button text-ink-black transition-colors hover:bg-surface-container-low" href="{{ '/services/' | relative_url }}">
+        Explore capabilities
+        <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+    </div>
+    <div class="flex flex-col gap-8 md:col-span-6 md:col-start-7 md:mt-20">
+      {% for service in site.data.services limit:2 %}
+        <article class="focus-card rounded-[2.5rem] {% if forloop.index == 2 %}bg-surface-container-low md:-ml-12{% else %}bg-white{% endif %} p-8 shadow-[0px_24px_48px_rgba(0,0,0,0.08)] md:p-10">
+          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-full {% if forloop.index == 2 %}bg-white{% else %}bg-soft-bone{% endif %}">
+            <span class="material-symbols-outlined text-[32px] text-clay-brown">{{ service.icon }}</span>
+          </div>
+          <h3 class="text-h3-card text-ink-black">{{ service.title }}</h3>
+          <p class="mt-4 text-body-standard text-slate-gray">{{ service.detail }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

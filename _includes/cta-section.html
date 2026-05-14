@@ -1,0 +1,10 @@
+<section class="px-6 py-16 md:px-12 md:py-24">
+  <div class="mx-auto flex max-w-[960px] flex-col items-center gap-6 text-center">
+    <div class="flex h-16 w-16 items-center justify-center rounded-full bg-surface-container-high text-clay-brown">
+      <span class="material-symbols-outlined text-3xl">{{ include.icon }}</span>
+    </div>
+    <h2 class="max-w-[18ch] text-h2-section text-ink-black">{{ include.heading }}</h2>
+    <p class="max-w-[48ch] text-body-standard text-slate-gray">{{ include.copy }}</p>
+    <a class="rounded-full bg-ink-black px-8 py-4 text-nav-button text-canvas-cream transition-opacity hover:opacity-85" href="{{ include.url | relative_url }}">{{ include.button_text }}</a>
+  </div>
+</section>

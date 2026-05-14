@@ -1,0 +1,41 @@
+<section class="px-6 py-16 md:px-12 md:py-24">
+  <div class="mx-auto max-w-[1280px] overflow-hidden">
+    <div class="text-center">
+      <p class="flex items-center justify-center gap-2 text-eyebrow uppercase tracking-[0.2em] text-clay-brown">
+        <span class="h-2 w-2 rounded-full bg-light-signal-orange"></span>
+        Our values
+      </p>
+      <h2 class="mt-4 text-h2-section text-ink-black">The core of our constellation</h2>
+    </div>
+    <div class="relative mt-16 hidden min-h-[760px] md:block">
+      <svg aria-hidden="true" class="absolute inset-0 h-full w-full" fill="none" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 240 200 Q 600 40 920 280" stroke="#F37338" stroke-dasharray="5 5" stroke-width="1.5"/>
+        <path d="M 920 280 Q 820 610 360 550" stroke="#F37338" stroke-dasharray="5 5" stroke-width="1.5"/>
+        <path d="M 360 550 Q 170 410 240 200" stroke="#F37338" stroke-dasharray="5 5" stroke-width="1.5"/>
+      </svg>
+      {% for value in site.data.values %}
+        <article class="absolute {{ value.container_class }} text-center">
+          <div class="relative {{ value.image_class }} overflow-hidden rounded-full border border-dust-taupe/70 bg-white shadow-[0px_24px_48px_rgba(0,0,0,0.08)]">
+            <img alt="{{ value.title }} illustration" class="h-full w-full object-cover" src="{{ value.image | relative_url }}">
+            <div class="absolute bottom-0 right-0 translate-x-2 translate-y-2 rounded-full border-4 border-canvas-cream bg-surface-container-lowest p-3 shadow-md">
+              <span class="material-symbols-outlined text-ink-black">north_east</span>
+            </div>
+          </div>
+          <h3 class="mt-6 text-h3-card text-ink-black">{{ value.title }}</h3>
+          <p class="mx-auto mt-3 max-w-[28ch] text-body-standard text-slate-gray">{{ value.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+    <div class="mt-14 grid gap-10 md:hidden">
+      {% for value in site.data.values %}
+        <article class="text-center">
+          <div class="mx-auto h-[240px] w-[240px] overflow-hidden rounded-full border border-dust-taupe/70 bg-white shadow-[0px_24px_48px_rgba(0,0,0,0.08)]">
+            <img alt="{{ value.title }} illustration" class="h-full w-full object-cover" src="{{ value.image | relative_url }}">
+          </div>
+          <h3 class="mt-6 text-h3-card text-ink-black">{{ value.title }}</h3>
+          <p class="mx-auto mt-3 max-w-[28ch] text-body-standard text-slate-gray">{{ value.description }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+- title: Business Structuring
+  summary: Design resilient entity and governance structures before growth compounds tax and reporting complexity.
+  detail: Ideal for founders, owner-managed businesses, and new ventures that need a stable financial operating model from day one.
+  audience: Founders and growth-stage businesses
+  icon: account_tree
+  image: /assets/images/service-structuring.svg
+- title: Capital Gains Strategy
+  summary: Navigate capital events, active trading, and disposal timing with clearer tax-aware decision making.
+  detail: Built for clients balancing investment activity, portfolio decisions, and the downstream consequences of capital gains tax.
+  audience: Investors and private clients
+  icon: monitoring
+  image: /assets/images/service-capital-gains.svg
+- title: Ongoing Advisory
+  summary: Keep strategic decisions connected to cash flow, tax exposure, and the practical reality of operating the business.
+  detail: A retained advisory relationship for clients who need an accountant that can support planning, not just reporting.
+  audience: Leadership teams and long-term clients
+  icon: timeline
+  image: /assets/images/service-advisory.svg
