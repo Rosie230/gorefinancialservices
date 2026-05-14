@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Gore Financial Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#e6e1e1",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#ffb59b",
+                      "tertiary": "#000000",
+                      "canvas-cream": "#F3F0EE",
+                      "ink-black": "#141413",
+                      "surface-container-low": "#f7f3f2",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#581900",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed": "#e5e2e0",
+                      "surface-variant": "#e5e2e1",
+                      "surface-dim": "#ddd9d8",
+                      "primary": "#000000",
+                      "on-surface": "#1c1b1b",
+                      "background": "#fdf8f7",
+                      "surface-container-highest": "#e5e2e1",
+                      "on-primary-fixed": "#1c1c1a",
+                      "secondary-fixed": "#ffdbcf",
+                      "on-background": "#1c1b1b",
+                      "surface-bright": "#fdf8f7",
+                      "inverse-primary": "#c9c6c4",
+                      "primary-container": "#1c1c1a",
+                      "outline": "#767872",
+                      "on-primary-fixed-variant": "#474745",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#ebe7e6",
+                      "surface-container": "#f1edec",
+                      "on-tertiary-container": "#868383",
+                      "light-signal-orange": "#F37338",
+                      "secondary": "#aa3700",
+                      "inverse-surface": "#313030",
+                      "inverse-on-surface": "#f4f0ef",
+                      "primary-fixed-dim": "#c9c6c4",
+                      "clay-brown": "#9A3A0A",
+                      "dust-taupe": "#D1CDC7",
+                      "surface-tint": "#5f5e5d",
+                      "on-secondary-fixed-variant": "#822800",
+                      "soft-bone": "#F4F4F4",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#1c1b1b",
+                      "secondary-container": "#fd6528",
+                      "on-surface-variant": "#464742",
+                      "on-secondary-fixed": "#380d00",
+                      "slate-gray": "#696969",
+                      "on-primary-container": "#858382",
+                      "lifted-cream": "#FCFBFA",
+                      "tertiary-fixed-dim": "#cac5c5",
+                      "on-primary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface": "#fdf8f7",
+                      "on-tertiary-fixed-variant": "#484646",
+                      "outline-variant": "#c7c7c0",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "on-error-container": "#93000a",
+                      "link-blue": "#3860BE"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-v-desktop": "128px",
+                      "max-width": "1280px",
+                      "section-v-mobile": "48px",
+                      "gutter-h": "48px",
+                      "base": "8px",
+                      "nav-margin-top": "24px"
+              },
+              "fontFamily": {
+                      "h1-hero": [
+                              "Sofia Sans"
+                      ],
+                      "h3-card": [
+                              "Sofia Sans"
+                      ],
+                      "footer-header": [
+                              "Sofia Sans"
+                      ],
+                      "eyebrow": [
+                              "Sofia Sans"
+                      ],
+                      "h2-section": [
+                              "Sofia Sans"
+                      ],
+                      "h1-hero-mobile": [
+                              "Sofia Sans"
+                      ],
+                      "footer-link": [
+                              "Sofia Sans"
+                      ],
+                      "nav-button": [
+                              "Sofia Sans"
+                      ],
+                      "body-standard": [
+                              "Sofia Sans"
+                      ]
+              },
+              "fontSize": {
+                      "h1-hero": [
+                              "64px",
+                              {
+                                      "lineHeight": "64px",
+                                      "letterSpacing": "-1.28px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "h3-card": [
+                              "24px",
+                              {
+                                      "lineHeight": "28.8px",
+                                      "letterSpacing": "-0.48px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "footer-header": [
+                              "12px",
+                              {
+                                      "lineHeight": "14px",
+                                      "letterSpacing": "0.56px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "eyebrow": [
+                              "14px",
+                              {
+                                      "lineHeight": "14px",
+                                      "letterSpacing": "0.56px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "h2-section": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.72px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "h1-hero-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.8px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "footer-link": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "450"
+                              }
+                      ],
+                      "nav-button": [
+                              "16px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "-0.48px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-standard": [
+                              "16px",
+                              {
+                                      "lineHeight": "22.4px",
+                                      "fontWeight": "450"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+</head>
+<body class="bg-canvas-cream text-ink-black font-body-standard antialiased selection:bg-light-signal-orange selection:text-white">
+<!-- Top Navigation Container -->
+<header class="fixed top-0 left-1/2 -translate-x-1/2 w-full z-50 flex items-center justify-between px-8 py-3 bg-surface-container-lowest/80 text-primary font-nav-button text-nav-button rounded-full mt-nav-margin-top max-w-[90%] mx-auto backdrop-blur-md shadow-[0px_4px_24px_rgba(0,0,0,0.04)] shadow-sm transition-transform duration-200">
+<!-- Brand Logo -->
+<a class="font-h3-card text-h3-card font-bold text-ink-black flex items-center gap-2 hover:opacity-80 transition-opacity" href="#">
+<span class="w-8 h-8 rounded-full bg-ink-black flex items-center justify-center text-canvas-cream">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 18px;">account_balance</span>
+</span>
+            Gore Financial
+        </a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-ink-black hover:text-clay-brown transition-colors hover:opacity-80" href="#">Services</a>
+<a class="text-ink-black hover:text-clay-brown transition-colors hover:opacity-80" href="#">Solutions</a>
+<a class="text-ink-black hover:text-clay-brown transition-colors hover:opacity-80" href="#">Insights</a>
+<a aria-current="page" class="text-clay-brown font-bold border-b-2 border-clay-brown pb-1 hover:opacity-80 transition-opacity scale-95 duration-200" href="#">About Us</a>
+</nav>
+<!-- Search & Trailing Action -->
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-transparent hover:bg-surface-variant transition-colors text-ink-black">
+<span class="material-symbols-outlined">search</span>
+</button>
+<a class="hidden md:inline-flex bg-ink-black text-canvas-cream px-6 py-2 rounded-full font-nav-button text-nav-button hover:opacity-80 transition-opacity" href="#">
+                Get Started
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden w-10 h-10 rounded-full flex items-center justify-center text-ink-black">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main>
+<!-- Hero Section (Stadium) -->
+<section class="pt-[160px] pb-section-v-mobile md:pb-section-v-desktop px-gutter-h max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+<div class="md:col-span-8">
+<p class="font-eyebrow text-eyebrow text-slate-gray mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-light-signal-orange inline-block"></span>
+                        Our Mission
+                    </p>
+<h1 class="font-h1-hero-mobile text-h1-hero-mobile md:font-h1-hero md:text-h1-hero text-ink-black max-w-4xl">
+                        Pioneering specialized accounting for startups and complex capital gains.
+                    </h1>
+</div>
+<div class="md:col-span-4 flex items-end">
+<p class="font-body-standard text-body-standard text-surface-tint max-w-sm pb-2">
+                        For 60 years, Gore Financial has engineered structural clarity for visionary enterprises, turning tax complexity into a strategic advantage.
+                    </p>
+</div>
+</div>
+<!-- Stadium Hero Image -->
+<div class="w-full h-[614px] md:h-[768px] rounded-[40px] overflow-hidden shadow-[0px_24px_48px_rgba(0,0,0,0.08)] relative">
+<img alt="Modern building exterior" class="w-full h-full object-cover" data-alt="A striking architectural photograph of a modern, institutional building exterior featuring clean lines and warm, putty-cream stone textures. The lighting is bright and high-key, casting soft, structural shadows that emphasize geometric precision. The mood is sophisticated, established, and editorial, reflecting a premium corporate brand identity with massive whitespace and a sophisticated atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByU9E055xdIV_UyMgOq5WDiuWBFu5wYzr4HBmfJOr-cjt9iLAemLDkR3CST6qh0ZyJ73NXbSPahgNG3a0ccySLGK61q3hzj-iYJN3WnR50YkV7fpLekdFHnZ1fjMFziPca65uJ8XpBJJFNjD98HLi_I-aMtM7-tq-uaQDqKNJslfCO5SUYfc1KV3-UKK6mZBX6YUNWKnU2Ys9vQM2-VaxmVKTI5pVDCp0NHfmHY-hhFyqE4zKCWqwlqsTKGmJgWniR_LQilsLL1zlb"/>
+</div>
+</section>
+<!-- Expertise Section (Asymmetric) -->
+<section class="py-section-v-mobile md:py-section-v-desktop px-gutter-h max-w-max-width mx-auto border-t border-dust-taupe/30">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-8 items-start">
+<!-- Left Column text -->
+<div class="md:col-span-5 md:sticky md:top-[120px]">
+<h2 class="font-h2-section text-h2-section text-ink-black mb-6">Strategic Architecture for Modern Wealth.</h2>
+<p class="font-body-standard text-body-standard text-surface-tint mb-8">
+                        Our expertise isn't just in compliance; it's in structural foresight. We map the terrain of business structuring and share trading tax legislation to ensure your capital trajectory remains unhindered and optimized.
+                    </p>
+<a class="inline-flex items-center gap-2 bg-white border-[1.5px] border-ink-black text-ink-black px-6 py-3 rounded-full font-nav-button text-nav-button hover:bg-surface-container-low transition-colors" href="#">
+                        Explore Capabilities
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Right Column Cards (Staggered) -->
+<div class="md:col-span-6 md:col-start-7 flex flex-col gap-12 md:mt-24">
+<!-- Card 1 -->
+<div class="bg-white p-8 md:p-12 rounded-[40px] shadow-sm relative group">
+<div class="w-16 h-16 rounded-full bg-soft-bone flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-clay-brown" style="font-size: 32px;">account_tree</span>
+</div>
+<h3 class="font-h3-card text-h3-card text-ink-black mb-4">Business Structuring</h3>
+<p class="font-body-standard text-body-standard text-slate-gray">
+                            Designing resilient corporate frameworks that protect assets and facilitate scalable growth for high-velocity startups.
+                        </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-8 md:p-12 rounded-[40px] shadow-sm relative group md:-ml-12">
+<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-clay-brown" style="font-size: 32px;">monitoring</span>
+</div>
+<h3 class="font-h3-card text-h3-card text-ink-black mb-4">Share Trading Tax Advice</h3>
+<p class="font-body-standard text-body-standard text-slate-gray">
+                            Navigating the complexities of active trading, capital gains exemptions, and cross-border portfolio taxation with precision.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Values Section (Constellation Pattern) -->
+<section class="py-section-v-mobile md:py-section-v-desktop px-gutter-h max-w-max-width mx-auto overflow-hidden relative">
+<div class="text-center mb-16 md:mb-24 relative z-10">
+<p class="font-eyebrow text-eyebrow text-slate-gray mb-4 flex items-center justify-center gap-2">
+<span class="w-2 h-2 rounded-full bg-light-signal-orange inline-block"></span>
+                    Our Values
+                </p>
+<h2 class="font-h2-section text-h2-section text-ink-black">The Core of Our Constellation</h2>
+</div>
+<!-- Constellation Container -->
+<div class="relative w-full min-h-[800px] hidden md:block">
+<!-- SVG Orbital Arcs -->
+<svg class="absolute top-0 left-0 w-full h-full pointer-events-none z-0" fill="none" viewbox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+<path class="opacity-60" d="M 250 200 Q 600 50 950 300" fill="none" stroke="#F37338" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<path class="opacity-60" d="M 950 300 Q 800 600 350 550" fill="none" stroke="#F37338" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<path class="opacity-60" d="M 350 550 Q 150 400 250 200" fill="none" stroke="#F37338" stroke-dasharray="4 4" stroke-width="1.5"></path>
+</svg>
+<!-- Value Portrait 1 -->
+<div class="absolute top-[80px] left-[150px] z-10 group">
+<div class="relative w-[240px] h-[240px]">
+<img alt="Integrity" class="w-full h-full rounded-full object-cover shadow-[0px_24px_48px_rgba(0,0,0,0.08)] grayscale hover:grayscale-0 transition-all duration-500" data-alt="A candid, warm portrait of a team collaborating in a bright, modern corporate office. The setting features putty-cream walls and soft, diffused natural lighting typical of a high-end editorial magazine layout. The individuals project an aura of intelligence, structural precision, and approachability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK7xsCXLDIvb9EFcXYFNT78e_ZVOywKGksPP9Cmo8hi7NngeFW7qRs7pQksQ_fc27vR0KMZeupzH_NPbSMDNZmCM2FdQ1XvVVQqJD-FgWr1YZ8isEe1cL6FzEcZtz9gX8NqVbDaxjCP308CXDQu-G8vVZ4ZZgkct2P1b2jL1_ThlPHwhns0T3SRdwcVbtFb_TLnN2VqA-X0CTz_uhdFTOjsFB2XL-hpcwobJaYXv4YICiVSew2pld_EW5SyzVpyMbOCGzU4g-Sf2Rk"/>
+<!-- Satellite CTA -->
+<button class="absolute -bottom-4 -right-4 w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center text-ink-black shadow-md hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">north_east</span>
+</button>
+</div>
+<div class="mt-6 text-center max-w-[240px]">
+<h3 class="font-h3-card text-h3-card text-ink-black">Integrity</h3>
+</div>
+</div>
+<!-- Value Portrait 2 -->
+<div class="absolute top-[180px] right-[150px] z-10 group">
+<div class="relative w-[280px] h-[280px]">
+<img alt="Foresight" class="w-full h-full rounded-full object-cover shadow-[0px_24px_48px_rgba(0,0,0,0.08)] grayscale hover:grayscale-0 transition-all duration-500" data-alt="An editorial-style close-up of financial blueprints and structured planning documents on a light stone table. A hand is pointing to a structural node, emphasizing foresight and strategic mapping. The aesthetic is clean, well-lit with soft shadows, reflecting a modern institutional heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWbk_-xHIUPC5ezkRj9OooKqoKunrFSdUTGE0dCgB9qVYlmXL7IKCI8t64nWSj8CHybm2JFWX_hf7E54LPQUb_Kg2L4O5dsmZOPsy8hYi0VIASBlFdtSMzHmlR_5baSBTIyWrYFrRGlk3Wl0x2EUxyoLaMRtZ8Eh0P9fRBD_adwupF7mhY3FMY1xwAKAuIwkA7LycOKNjEM5etFGVRthT8BJUsmA4ctUqFzg-SxT_GxV54rAVT-YwTYB8Vup6OHkyOaRfhuoSyX1op"/>
+<!-- Satellite CTA -->
+<button class="absolute -bottom-4 -right-4 w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center text-ink-black shadow-md hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">north_east</span>
+</button>
+</div>
+<div class="mt-6 text-center max-w-[280px]">
+<h3 class="font-h3-card text-h3-card text-ink-black">Foresight</h3>
+</div>
+</div>
+<!-- Value Portrait 3 -->
+<div class="absolute top-[430px] left-[250px] z-10 group">
+<div class="relative w-[200px] h-[200px]">
+<img alt="Partnership" class="w-full h-full rounded-full object-cover shadow-[0px_24px_48px_rgba(0,0,0,0.08)] grayscale hover:grayscale-0 transition-all duration-500" data-alt="A minimalist composition showing two professionals shaking hands in a bright, abstract architectural space. The background features deep 40px rounded corners and a cream palette, avoiding sterile whites. The lighting creates a sense of trust, partnership, and institutional strength." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-cFf_LcT1nbZCse1X3ZQI5gYBaU3vfQlg8YNQGa5BZkTZB1WCmDNIraYwS5IDxnr5xxS4hmGSS-SuXXBpFcWKRkwhL3tKTaT9HoQysPXWPzFGYoJrRSUoIu18M8h60_Jz_ZuJdu_PGHAbv84iC8m8T4x7C-R4L6pDqPmoK7C3DmhMg9B83RAMqui6POLF3005zsFAXbSWTWf1dOJTSRPO6m4wQBzmUztLGayqJt9t7dcFyfRRnhe-EPBLPhaLl8hBnVwcycPQb0Mv"/>
+<!-- Satellite CTA -->
+<button class="absolute -bottom-4 -right-4 w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center text-ink-black shadow-md hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">north_east</span>
+</button>
+</div>
+<div class="mt-6 text-center max-w-[200px]">
+<h3 class="font-h3-card text-h3-card text-ink-black">Partnership</h3>
+</div>
+</div>
+</div>
+<!-- Mobile Fallback (Stacked) -->
+<div class="flex flex-col gap-12 md:hidden">
+<div class="flex flex-col items-center text-center">
+<div class="w-[240px] h-[240px] mb-6">
+<img alt="Integrity" class="w-full h-full rounded-full object-cover" data-alt="A candid, warm portrait of a team collaborating in a bright, modern corporate office. The setting features putty-cream walls and soft, diffused natural lighting typical of a high-end editorial magazine layout. The individuals project an aura of intelligence, structural precision, and approachability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW7V2QIuAmIa_LlJxjvkIrwuNCKbAWgGgp-EA_LeGc6c7zhu0qJGiM4AghoRVjOJij9oC6qA0ZzbVl4E98eXaL1jlXzOUcuyXskp9dC0nN_naAQCRkZUxtB6QvvN2wgu3UcK1buhsCRyB4RLv-M5v2yZPodLFqsQVDRN5Lv_ycHKBZcEPcD5YoKfQoAs_NRPR7TeOsN2oPfDWrfrIiGTJqtOSNsOsoXT5dVG1mYf0OlKJn1e6vms_rjB2uPg4qzPf04Jsvn1pmcdMh"/>
+</div>
+<h3 class="font-h3-card text-h3-card text-ink-black">Integrity</h3>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="w-[240px] h-[240px] mb-6">
+<img alt="Foresight" class="w-full h-full rounded-full object-cover" data-alt="An editorial-style close-up of financial blueprints and structured planning documents on a light stone table. A hand is pointing to a structural node, emphasizing foresight and strategic mapping. The aesthetic is clean, well-lit with soft shadows, reflecting a modern institutional heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5gz_CQDgDTu0OLutLG_U-dCGKkiNDpnOsSpDLpyO8Pr0fL2e6-PUB1UlBWh2_axPQdxdV6xKrtEuyM8-r9-m9j3JXES7JvfMm-VQzsE3dg9GTEdRREMcCRLF2T7O0r8bUuzDpmZabEJMopj1ceVbHOpBmcdKa9hXhb9hXOU8g0Gwp2S9lWca58tycWnMGpguPJ2kcamjnLkBHU43pQu-ztDwb_zb3_NaICLVK1NPHZ25Yv0jhSJgctb6ETwewmht8UqYauHnqk264"/>
+</div>
+<h3 class="font-h3-card text-h3-card text-ink-black">Foresight</h3>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-ink-black text-canvas-cream full-width mt-section-v-desktop no-border">
+<div class="w-full py-section-v-desktop px-gutter-h max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-base">
+<!-- Brand & Copyright -->
+<div class="md:col-span-1 flex flex-col justify-between h-full">
+<div class="mb-8">
+<a class="font-h2-section text-h2-section text-canvas-cream flex items-center gap-2" href="#">
+<span class="w-10 h-10 rounded-full bg-canvas-cream flex items-center justify-center text-ink-black">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</span>
+                        Gore
+                    </a>
+</div>
+<p class="font-body-standard text-body-standard text-surface-dim mt-auto pt-12">
+                    © 2024 Gore Financial Service. All rights reserved.
+                </p>
+</div>
+<!-- Footer Links Container -->
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<!-- Column 1 -->
+<div>
+<h4 class="font-footer-header text-footer-header text-surface-dim mb-4 uppercase tracking-wider">Services</h4>
+<ul class="space-y-3">
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Strategic Planning</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Wealth Management</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Risk Solutions</a></li>
+</ul>
+</div>
+<!-- Column 2 -->
+<div>
+<h4 class="font-footer-header text-footer-header text-surface-dim mb-4 uppercase tracking-wider">Insights</h4>
+<ul class="space-y-3">
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Market Analysis</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Global Trends</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Whitepapers</a></li>
+</ul>
+</div>
+<!-- Column 3 -->
+<div>
+<h4 class="font-footer-header text-footer-header text-surface-dim mb-4 uppercase tracking-wider">Company</h4>
+<ul class="space-y-3">
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Our Story</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Leadership</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Careers</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors mt-6 block" href="#">Contact Support</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="bg-canvas-cream text-ink-black font-body-standard antialiased selection:bg-light-signal-orange selection:text-white">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include nav.html %}
+    <main id="main-content" class="pt-[112px] md:pt-[148px] pb-16 md:pb-24">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
+  </body>
+</html>

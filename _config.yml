@@ -1,0 +1,19 @@
+title: Gore Financial Services
+description: Strategic accounting and advisory for founders, investors, and complex capital gains matters.
+url: ""
+baseurl: ""
+timezone: UTC
+markdown: kramdown
+permalink: pretty
+theme: null
+exclude:
+  - roadmap.md
+  - gore_financial_services_updated_homepage/
+  - gore_financial_services_about_us/
+  - gore_financial_services_contact_form/
+  - gore_financial_service_mastercard_inspired_style/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page

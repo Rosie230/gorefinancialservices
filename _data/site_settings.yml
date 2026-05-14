@@ -1,0 +1,15 @@
+brand_name: Gore Financial Services
+short_name: Gore Financial
+site_tagline: Strategic accounting for growth, capital gains, and long-term clarity.
+site_description: Gore Financial Services helps founders, private clients, and active investors navigate tax complexity with structured, strategic advice.
+primary_cta_label: Schedule a consultation
+primary_cta_url: /contact/
+secondary_cta_label: Explore services
+secondary_cta_url: /services/
+contact_email: ""
+contact_phone: ""
+service_region: Australia-wide advisory for founders, investors, and private clients.
+response_sla: We aim to respond to new enquiries within two business days.
+form_provider: Formspree
+form_endpoint: ""
+form_success_message: Thank you for your enquiry. We will review the details and get back to you shortly.

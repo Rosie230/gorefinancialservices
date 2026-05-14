@@ -1,0 +1,22 @@
+- title: Services
+  links:
+    - text: Business Structuring
+      url: /services/
+    - text: Capital Gains Strategy
+      url: /services/
+    - text: Advisory Retainers
+      url: /services/
+- title: Company
+  links:
+    - text: About Gore Financial Services
+      url: /about/
+    - text: Contact
+      url: /contact/
+    - text: Insights
+      url: /insights/
+- title: Legal
+  links:
+    - text: Privacy Policy
+      url: /legal/privacy/
+    - text: Terms of Use
+      url: /legal/terms/

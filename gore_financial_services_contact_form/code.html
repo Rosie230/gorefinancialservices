@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Schedule a Consultation | Gore Financial Services</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,100..1000;1,100..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#e6e1e1",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb59b",
+                        "tertiary": "#000000",
+                        "canvas-cream": "#F3F0EE",
+                        "ink-black": "#141413",
+                        "surface-container-low": "#f7f3f2",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#581900",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#e5e2e0",
+                        "surface-variant": "#e5e2e1",
+                        "surface-dim": "#ddd9d8",
+                        "primary": "#000000",
+                        "on-surface": "#1c1b1b",
+                        "background": "#fdf8f7",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed": "#1c1c1a",
+                        "secondary-fixed": "#ffdbcf",
+                        "on-background": "#1c1b1b",
+                        "surface-bright": "#fdf8f7",
+                        "inverse-primary": "#c9c6c4",
+                        "primary-container": "#1c1c1a",
+                        "outline": "#767872",
+                        "on-primary-fixed-variant": "#474745",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#ebe7e6",
+                        "surface-container": "#f1edec",
+                        "on-tertiary-container": "#868383",
+                        "light-signal-orange": "#F37338",
+                        "secondary": "#aa3700",
+                        "inverse-surface": "#313030",
+                        "inverse-on-surface": "#f4f0ef",
+                        "primary-fixed-dim": "#c9c6c4",
+                        "clay-brown": "#9A3A0A",
+                        "dust-taupe": "#D1CDC7",
+                        "surface-tint": "#5f5e5d",
+                        "on-secondary-fixed-variant": "#822800",
+                        "soft-bone": "#F4F4F4",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#1c1b1b",
+                        "secondary-container": "#fd6528",
+                        "on-surface-variant": "#464742",
+                        "on-secondary-fixed": "#380d00",
+                        "slate-gray": "#696969",
+                        "on-primary-container": "#858382",
+                        "lifted-cream": "#FCFBFA",
+                        "tertiary-fixed-dim": "#cac5c5",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface": "#fdf8f7",
+                        "on-tertiary-fixed-variant": "#484646",
+                        "outline-variant": "#c7c7c0",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-error-container": "#93000a",
+                        "link-blue": "#3860BE"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-v-desktop": "128px",
+                        "max-width": "1280px",
+                        "section-v-mobile": "48px",
+                        "gutter-h": "48px",
+                        "base": "8px",
+                        "nav-margin-top": "24px"
+                    },
+                    "fontFamily": {
+                        "h1-hero": ["Sofia Sans"],
+                        "h3-card": ["Sofia Sans"],
+                        "footer-header": ["Sofia Sans"],
+                        "eyebrow": ["Sofia Sans"],
+                        "h2-section": ["Sofia Sans"],
+                        "h1-hero-mobile": ["Sofia Sans"],
+                        "footer-link": ["Sofia Sans"],
+                        "nav-button": ["Sofia Sans"],
+                        "body-standard": ["Sofia Sans"]
+                    },
+                    "fontSize": {
+                        "h1-hero": ["64px", {"lineHeight": "64px", "letterSpacing": "-1.28px", "fontWeight": "500"}],
+                        "h3-card": ["24px", {"lineHeight": "28.8px", "letterSpacing": "-0.48px", "fontWeight": "500"}],
+                        "footer-header": ["12px", {"lineHeight": "14px", "letterSpacing": "0.56px", "fontWeight": "700"}],
+                        "eyebrow": ["14px", {"lineHeight": "14px", "letterSpacing": "0.56px", "fontWeight": "700"}],
+                        "h2-section": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.72px", "fontWeight": "500"}],
+                        "h1-hero-mobile": ["40px", {"lineHeight": "40px", "letterSpacing": "-0.8px", "fontWeight": "500"}],
+                        "footer-link": ["14px", {"lineHeight": "20px", "fontWeight": "450"}],
+                        "nav-button": ["16px", {"lineHeight": "16px", "letterSpacing": "-0.48px", "fontWeight": "500"}],
+                        "body-standard": ["16px", {"lineHeight": "22.4px", "fontWeight": "450"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for a polished look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F3F0EE; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D1CDC7; 
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9A3A0A; 
+        }
+        
+        /* Form Element Resets for Tailwind Forms plugin compatibility while maintaining custom styles */
+        input[type="text"], input[type="email"], select, textarea {
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+<body class="bg-canvas-cream text-ink-black font-body-standard antialiased overflow-x-hidden">
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 left-1/2 -translate-x-1/2 w-full z-50 flex items-center justify-between px-8 py-3 bg-surface-container-lowest/80 rounded-full mt-nav-margin-top max-w-[90%] mx-auto backdrop-blur-md shadow-[0px_4px_24px_rgba(0,0,0,0.04)] hidden md:flex">
+<!-- Brand Logo -->
+<div class="font-h3-card text-h3-card font-bold text-ink-black">
+            Gore Financial
+        </div>
+<!-- Navigation Links -->
+<div class="flex items-center space-x-8">
+<a class="font-nav-button text-nav-button text-ink-black hover:text-clay-brown transition-colors" href="#">Services</a>
+<a class="font-nav-button text-nav-button text-ink-black hover:text-clay-brown transition-colors" href="#">Solutions</a>
+<a class="font-nav-button text-nav-button text-ink-black hover:text-clay-brown transition-colors" href="#">Insights</a>
+<a class="font-nav-button text-nav-button text-ink-black hover:text-clay-brown transition-colors" href="#">About Us</a>
+</div>
+<!-- Trailing Action -->
+<div class="flex items-center space-x-4">
+<button aria-label="Search" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-dim transition-colors text-ink-black">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<a class="font-nav-button text-nav-button bg-ink-black text-canvas-cream px-6 py-3 rounded-full hover:opacity-80 transition-opacity whitespace-nowrap" href="#">
+                Get Started
+            </a>
+</div>
+</nav>
+<!-- Mobile TopNav (Simplified for focus) -->
+<nav class="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-surface-container-lowest/90 backdrop-blur-md shadow-sm md:hidden">
+<div class="font-h3-card text-h3-card font-bold text-ink-black">Gore Financial</div>
+<button class="text-ink-black">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-[140px] md:pt-[200px] pb-section-v-mobile md:pb-section-v-desktop px-gutter-h max-w-max-width mx-auto relative">
+<!-- Background Decorative Ghost Watermark -->
+<div aria-hidden="true" class="absolute top-[10%] left-[-10%] text-[200px] font-h1-hero text-h1-hero text-surface-container-high opacity-40 select-none pointer-events-none z-0 tracking-tighter">
+            GORE
+        </div>
+<!-- Asymmetric Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-center relative z-10">
+<!-- Left Column: Editorial Context & Imagery -->
+<div class="col-span-1 md:col-span-5 flex flex-col justify-center relative">
+<!-- Decorative Orbital Arc -->
+<svg class="absolute top-[-40px] left-[-20px] w-32 h-32 text-light-signal-orange hidden md:block" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M100 0C44.7715 0 0 44.7715 0 100" stroke="currentColor" stroke-width="1.5"></path>
+</svg>
+<h1 class="font-h1-hero-mobile text-h1-hero-mobile md:font-h1-hero md:text-h1-hero text-ink-black mb-6">
+                    Schedule a <br class="hidden md:block"/>Consultation.
+                </h1>
+<p class="font-body-standard text-body-standard text-slate-gray mb-12 max-w-md">
+                    Connect with our advisory team to discuss your strategic planning, wealth management, or corporate risk solutions. We build enduring partnerships grounded in sixty years of institutional heritage.
+                </p>
+<!-- Portrait Card Element (Editorial Motif) -->
+<div class="relative w-48 h-48 rounded-full overflow-hidden shrink-0 hidden md:block">
+<img alt="Architectural detail" class="w-full h-full object-cover" data-alt="A high-end editorial photography shot of a modern, minimalist architectural space. Warm, soft directional lighting creates deep, satisfying shadows on a textured stone surface painted in putty-cream and soft taupe tones. The composition is highly intentional, asymmetric, and evokes a sense of institutional permanence, stability, and quiet sophistication, perfectly suited for a premium financial firm's brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_sIXiv4bP1XQccwidLn3yO4KqtJb8jTDV61apFGUCEY9BSl7FBaM7aHIFxuYFLBbQcLJVQRoEVXSQtu5Bus7yXsIiDXI4naSuTfUOg6AbRPo1Z0rxfBLB_aQaRvKdW9mAInzj7uJey4vPs6E3JtixVxGHzw65EN44_EvOT0htZpJoCyvAXDNI2DJv0QZbWt000lDu0aHhgpwTysfHZ8RT5U41rk9SPnSfVkXC5C4REulIg-fttG8QFhvWGuIeJf69eRySdX9IZ4KF"/>
+<!-- Satellite element -->
+<div class="absolute bottom-0 right-0 w-12 h-12 bg-light-signal-orange rounded-full flex items-center justify-center translate-x-2 translate-y-2 border-4 border-canvas-cream">
+<span class="material-symbols-outlined text-canvas-cream text-sm" data-icon="arrow_outward" style="font-variation-settings: 'FILL' 1;">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Form Container (Mastercard-inspired, Soft Elevation) -->
+<div class="col-span-1 md:col-span-6 md:col-start-7">
+<div class="bg-surface-container-lowest rounded-[2.5rem] md:rounded-xl p-8 md:p-12 shadow-[0px_24px_48px_rgba(0,0,0,0.08)] relative overflow-hidden">
+<!-- Form Header -->
+<div class="flex items-center mb-8 space-x-3">
+<div class="w-2 h-2 rounded-full bg-light-signal-orange"></div>
+<h3 class="font-eyebrow text-eyebrow text-ink-black uppercase tracking-widest">Client Inquiry</h3>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<!-- Full Name (Pill Input) -->
+<div>
+<label class="sr-only" for="fullName">Full Name</label>
+<input class="w-full bg-canvas-cream border border-surface-dim rounded-full px-6 py-4 font-body-standard text-body-standard text-ink-black placeholder:text-on-surface-variant focus:outline-none focus:border-ink-black focus:ring-0 transition-colors" id="fullName" name="fullName" placeholder="Full Name *" required="" type="text"/>
+</div>
+<!-- Email (Pill Input) -->
+<div>
+<label class="sr-only" for="email">Email Address</label>
+<input class="w-full bg-canvas-cream border border-surface-dim rounded-full px-6 py-4 font-body-standard text-body-standard text-ink-black placeholder:text-on-surface-variant focus:outline-none focus:border-ink-black focus:ring-0 transition-colors" id="email" name="email" placeholder="Email Address *" required="" type="email"/>
+</div>
+<!-- Business Name (Optional Pill Input) -->
+<div>
+<label class="sr-only" for="businessName">Business Name (Optional)</label>
+<input class="w-full bg-canvas-cream border border-surface-dim rounded-full px-6 py-4 font-body-standard text-body-standard text-ink-black placeholder:text-on-surface-variant focus:outline-none focus:border-ink-black focus:ring-0 transition-colors" id="businessName" name="businessName" placeholder="Business Name (Optional)" type="text"/>
+</div>
+<!-- Service Interest Dropdown (Pill Shape with Custom Arrow) -->
+<div class="relative">
+<label class="sr-only" for="serviceInterest">Service Interest</label>
+<select class="w-full appearance-none bg-canvas-cream border border-surface-dim rounded-full px-6 py-4 font-body-standard text-body-standard text-ink-black placeholder:text-on-surface-variant focus:outline-none focus:border-ink-black focus:ring-0 transition-colors cursor-pointer" id="serviceInterest" name="serviceInterest" required="">
+<option disabled="" selected="" value="">Select Service Interest *</option>
+<option value="startup">Business Startup</option>
+<option value="capitalGains">Capital Gains</option>
+</select>
+<div class="absolute inset-y-0 right-6 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</div>
+</div>
+<!-- Message Field (Large Radius, not full pill) -->
+<div>
+<label class="sr-only" for="message">How can we help?</label>
+<textarea class="w-full bg-canvas-cream border border-surface-dim rounded-[1.5rem] px-6 py-5 font-body-standard text-body-standard text-ink-black placeholder:text-on-surface-variant focus:outline-none focus:border-ink-black focus:ring-0 transition-colors resize-none" id="message" name="message" placeholder="How can we help you? *" required="" rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full bg-ink-black text-canvas-cream font-nav-button text-nav-button rounded-full py-5 px-8 flex items-center justify-center space-x-2 hover:opacity-80 transition-opacity active:scale-[0.98] duration-200" type="submit">
+<span>Submit Request</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<p class="text-center font-footer-link text-footer-link text-slate-gray mt-4">
+                            By submitting, you agree to our Privacy Policy.
+                        </p>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full bg-ink-black py-section-v-mobile md:py-section-v-desktop px-gutter-h mt-section-v-desktop">
+<div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-base gap-y-12 md:gap-y-0">
+<!-- Brand & Copyright -->
+<div class="col-span-1 flex flex-col justify-between h-full min-h-[160px]">
+<div class="font-h2-section text-h2-section text-canvas-cream">
+                    Gore Financial
+                </div>
+<div class="font-body-standard text-body-standard text-canvas-cream/70 mt-8 md:mt-0">
+                    © 2024 Gore Financial Service.<br/>All rights reserved.
+                </div>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1">
+<h4 class="font-footer-header text-footer-header text-canvas-cream uppercase tracking-widest mb-6">Services</h4>
+<ul class="space-y-3">
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Strategic Planning</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Wealth Management</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Risk Solutions</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1">
+<h4 class="font-footer-header text-footer-header text-canvas-cream uppercase tracking-widest mb-6">Insights</h4>
+<ul class="space-y-3">
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Market Analysis</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Global Trends</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Whitepapers</a></li>
+</ul>
+</div>
+<!-- Links Column 3 -->
+<div class="col-span-1">
+<h4 class="font-footer-header text-footer-header text-canvas-cream uppercase tracking-widest mb-6">Company</h4>
+<ul class="space-y-3">
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Our Story</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Leadership</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Careers</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Contact Support</a></li>
+<li class="pt-4"><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-footer-link text-footer-link text-canvas-cream/70 hover:text-light-signal-orange transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

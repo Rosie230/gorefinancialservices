@@ -1,0 +1,46 @@
+<header class="fixed inset-x-0 top-0 z-50 px-4 pt-4 md:px-6" data-site-nav>
+  <div class="mx-auto max-w-[1280px]">
+    <div class="flex items-center justify-between rounded-full border border-white/60 bg-surface-container-lowest/85 px-5 py-3 shadow-[0px_4px_24px_rgba(0,0,0,0.04)] backdrop-blur-md md:px-8">
+      <a class="flex items-center gap-3 text-h3-card font-semibold text-ink-black transition-opacity hover:opacity-80" href="{{ '/' | relative_url }}">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-ink-black text-canvas-cream">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">account_balance</span>
+        </span>
+        <span>{{ site.data.site_settings.brand_name }}</span>
+      </a>
+      <nav aria-label="Primary" class="hidden items-center gap-7 md:flex">
+        {% for item in site.data.navigation %}
+          {% assign is_active = false %}
+          {% if page.url == item.url %}
+            {% assign is_active = true %}
+          {% endif %}
+          <a class="border-b-2 pb-1 text-nav-button transition-colors {% if is_active %}border-clay-brown text-clay-brown{% else %}border-transparent text-ink-black hover:text-clay-brown{% endif %}" href="{{ item.url | relative_url }}">
+            {{ item.title }}
+          </a>
+        {% endfor %}
+      </nav>
+      <div class="hidden items-center gap-4 md:flex">
+        <a class="rounded-full border border-ink-black px-5 py-3 text-nav-button text-ink-black transition-colors hover:bg-surface-container-high" href="{{ site.data.site_settings.secondary_cta_url | relative_url }}">
+          {{ site.data.site_settings.secondary_cta_label }}
+        </a>
+        <a class="rounded-full bg-ink-black px-5 py-3 text-nav-button text-canvas-cream transition-opacity hover:opacity-85" href="{{ site.data.site_settings.primary_cta_url | relative_url }}">
+          {{ site.data.site_settings.primary_cta_label }}
+        </a>
+      </div>
+      <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu" class="flex h-11 w-11 items-center justify-center rounded-full border border-dust-taupe text-ink-black md:hidden" data-nav-toggle type="button">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+    <div class="mt-3 hidden rounded-[2rem] border border-dust-taupe/70 bg-surface-container-lowest px-5 py-5 shadow-[0px_24px_48px_rgba(0,0,0,0.08)] md:hidden" data-mobile-menu id="mobile-menu">
+      <nav aria-label="Mobile" class="flex flex-col gap-4">
+        {% for item in site.data.navigation %}
+          <a class="rounded-2xl px-4 py-3 text-nav-button text-ink-black transition-colors hover:bg-surface-container-low hover:text-clay-brown" href="{{ item.url | relative_url }}">
+            {{ item.title }}
+          </a>
+        {% endfor %}
+        <a class="mt-2 rounded-full bg-ink-black px-5 py-4 text-center text-nav-button text-canvas-cream transition-opacity hover:opacity-85" href="{{ site.data.site_settings.primary_cta_url | relative_url }}">
+          {{ site.data.site_settings.primary_cta_label }}
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
