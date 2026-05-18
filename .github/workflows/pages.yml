@@ -45,9 +45,11 @@ jobs:
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
 
   deploy:
-    if: github.event_name == 'push'
+    if: github.ref == 'refs/heads/main'   
     needs: build
     environment:
       name: github-pages
