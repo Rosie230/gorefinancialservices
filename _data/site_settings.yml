@@ -6,9 +6,9 @@ primary_cta_label: Schedule a consultation
 primary_cta_url: /contact/
 secondary_cta_label: Explore services
 secondary_cta_url: /services/
-contact_email: ""
+contact_email: "gorefinance@outlook.com "
 contact_phone: ""
-service_region: Australia-wide advisory for founders, investors, and private clients.
+service_region: Ireland-wide advisory for founders, investors, and private clients.
 response_sla: We aim to respond to new enquiries within two business days.
 # Public form settings only. Keep provider secrets and verification keys outside this repository.
 form_provider: Formspree
