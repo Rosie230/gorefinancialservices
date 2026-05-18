@@ -4,3 +4,6 @@ channels:
 dependencies:
   - ruby=3.2
   - git
+  - c-compiler
+  - cxx-compiler
+  - make

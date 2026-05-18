@@ -1,7 +1,7 @@
 title: Gore Financial Services
 description: Strategic accounting and advisory for founders, investors, and complex capital gains matters.
-url: ""
-baseurl: ""
+url: "https://ShaneGore.github.io"
+baseurl: "/gorefinancialservices"
 timezone: UTC
 markdown: kramdown
 permalink: pretty
